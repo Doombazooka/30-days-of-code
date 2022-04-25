@@ -1,0 +1,31 @@
+//https://www.codechef.com/problems/PASSORFAIL
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t!=0){
+        int q;
+        cin>>q;
+        int c;
+        cin>>c;
+        int i;
+        i=q-c;
+        int marks;
+        marks = (3*c) -i;
+        int pass;
+        cin>>pass;
+        if (marks>=pass)
+        {
+            cout<<"PASS"<<endl;
+        }
+        else{
+            cout<<"FAIL"<<endl;
+        }
+        
+	    t--;    
+	}
+	return 0;
+}
+
