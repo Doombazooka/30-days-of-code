@@ -1,4 +1,5 @@
-//https://www.codechef.com/problems/PASSORFAIL
+EXPIRY
+//https://www.codechef.com/problems/EXPIRY
 #include <iostream>
 using namespace std;
 
@@ -6,26 +7,23 @@ int main() {
 	int t;
 	cin>>t;
 	while(t!=0){
-        int q;
-        cin>>q;
-        int c;
-        cin>>c;
-        int i;
-        i=q-c;
-        int marks;
-        marks = (3*c) -i;
-        int pass;
-        cin>>pass;
-        if (marks>=pass)
+        int num;
+        cin>>num;
+        int days;
+        cin>>days;
+        int eat;
+        cin>>eat;
+        int total_eaten;
+        total_eaten = eat*days;
+        if(total_eaten>=num)
         {
-            cout<<"PASS"<<endl;
+            cout<<"YES"<<endl;
         }
         else{
-            cout<<"FAIL"<<endl;
+            cout<<"NO"<<endl;
         }
         
 	    t--;    
 	}
 	return 0;
 }
-
