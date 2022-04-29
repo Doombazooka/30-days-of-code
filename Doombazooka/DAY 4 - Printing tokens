@@ -1,0 +1,24 @@
+#include<iostream>
+#include<string>
+#include<cstring>
+using namespace std;
+int main(){
+    char name[700];
+      scanf("%[^\n]s",name);
+      int lent;
+      lent = strlen(name);
+
+      int i;
+      for (i = 0; i < lent; i++)
+      {   if (name[i]==' ')
+      {
+          cout<<endl;
+      }
+        else{
+          cout<<name[i];
+        }
+      }
+
+      
+    return 0;
+}
