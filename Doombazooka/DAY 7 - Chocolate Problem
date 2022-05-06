@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n=0;
+    int left=0;
+    int total=0;
+    int t=0;
+    int e=0;
+    cout<<"Please enter the number of turns :";
+    cin>>t;
+    while (t!=0)
+    {
+        cout<<"Please enter the number of chocolates : ";
+        cin>>total;
+        cout<<"Please enter the number of children : ";
+        cin>>n;
+        e=total/n;
+        left=total%n;
+        cout<<"Each children gets "<<e<<" Number of chocolates"<<endl;
+        cout<<"The number of Chocolates are remaining are : "<<left<<endl;
+        t--;
+    }
+    
+    return 0;
+}
